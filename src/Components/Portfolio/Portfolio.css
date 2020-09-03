@@ -1,0 +1,94 @@
+.project{
+    position: relative;
+    height: 300px;
+    width: 800px;
+    margin-top: 50px;
+}
+
+.projectImg{
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.project h1{
+    position: absolute;
+    color: #E7E7E5;
+    top: 5px;
+    margin: 0;
+    left: 470px;
+}
+
+.project ul{
+    position: absolute;
+    list-style: none;
+    color: #E7E7E5;
+    font-size: 14px;
+    margin: 0;
+    text-align: justify;
+    line-height: 18px;
+    left: 445px;
+    top: 30px;
+}
+
+.project ul li::before {
+    content: "›";
+    color: #A34716;
+    display: inline-block;
+    margin-left: -14px;
+    padding-right: 8px;
+}
+
+.project ul li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.project p{
+    position: absolute;
+    background-color: #0D2340;
+    color: #E7E7E5;
+    font-size: 14px;
+    padding: 12px;
+    width: 350px;
+    left: 270px;
+    top: 120px;
+    text-align: justify;
+}
+
+.gitImg{
+    position: absolute;
+    left: 480px;
+    top: 102px;
+    width: 25px;
+    filter: invert(28%) sepia(71%) saturate(1056%) hue-rotate(350deg) brightness(98%) contrast(91%); 
+}
+  
+.gitImg:hover{
+    filter: invert(47%) sepia(26%) saturate(2356%) hue-rotate(352deg) brightness(91%) contrast(91%);
+}
+
+#right{
+    left: 30%;
+}
+
+#right .projectImg{
+    left: 350px;
+}
+
+#right h1{
+    left: 190px;
+}
+
+#right ul{
+    left: 160px;
+}
+
+#right p{
+    left: 150px;
+}
+
+#right .gitImg{
+    left: 200px;
+}
