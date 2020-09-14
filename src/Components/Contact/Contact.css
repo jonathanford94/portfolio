@@ -1,0 +1,48 @@
+.contact p{
+    color: #E7E7E5;
+    line-height: 22px;
+    width: 80%;
+  }
+  
+  .form{
+    color: #E7E7E5;
+    background-color: #0D2340;
+    border: none;
+    margin-top: 2.5%;
+    padding-left: 10px;
+    display: inline-block;
+    font-size: 16px;
+  }
+  #form1{
+    height: 50px;
+    width: 80%;
+    display: inline-block;
+  }
+  
+  #form2{
+    height: 50px;
+    margin: 2.5% 0% 0% 0%;
+    width: 37.9%;
+    display: inline-block;
+  }
+  
+  #form3{
+    height: 50px;
+    margin: 2.5% 0% 0% 2.5%;
+    width: 37.9%;
+    display: inline-block;
+  }
+  
+  #form4{
+    height: 150px;
+    width: 80%;
+    display: inline-block;
+    padding-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #form5{
+    margin: 2.5% 35% ;
+    display: flex;
+    justify-content: center;
+  }
