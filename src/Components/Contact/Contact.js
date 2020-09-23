@@ -37,71 +37,19 @@ export class Contact extends React.Component {
             
             modalIsOpen: false
         }
-        this.onSubmit = this.onSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
-        this.submit= this.submit.bind(this);
     }
 
     handleChange(e) {
         this.setState({ [e.target.name]: e.target.value});
     }
 
-    onSubmit(e) {
-        e.preventDefault();
 
-        if (this.state.name === '') {
-            this.setState({
-                nameError: 'Please provide your name'
-            })
-        } else {
-            this.setState({
-                nameError: ''
-            })
-        }
-
-        if (this.state.email === '') {
-            this.setState({
-                emailError: 'Please provide an email address'
-            })
-        } else if (this.state.email === /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/ || this.state.email.indexOf('.') === -1 ) {
-            this.setState({
-                emailError: 'Please provide a valid email address'
-            })
-        } else {
-            this.setState({
-                emailError: ''
-            })
-        }
-
-        if (this.state.subject === '') {
-            this.setState({
-                subjectError: 'Please provide a subject message'
-            });
-        } else {
-            this.setState({
-                subjectError: ''
-            });
-        }
-
-        if (this.state.message === '') {
-            this.setState({
-                messageError: 'Please leave a message'
-            })
-        } else {
-            this.setState({
-                messageError: ''
-            })
-        }
-    }
-
-    submit(){
-        alert(this.state.name + this.state.subject + this.state.email + this.state.message);
-    }
 
     render() {
         return (
             <section className="contact" id="contactSection">
-                <ScrollAnimation className="delay1" animateIn="fadeUp" animateOnce="true">
+                <ScrollAnimation className="delay1 test" animateIn="fadeUp" animateOnce="true">
                     <h3 className="title">Contact</h3>
                     <div className="line"></div>
                 </ScrollAnimation>
@@ -118,7 +66,6 @@ export class Contact extends React.Component {
                             placeholder="Name" 
                             onChange={this.handleChange}
                             ></input>
-                        <p className="form-error">{this.state.nameError}</p>
                         <input 
                             name="email"
                             id="form2" 
@@ -135,8 +82,6 @@ export class Contact extends React.Component {
                             placeholder="Subject" 
                             onChange={this.handleChange}
                             ></input>
-                        <p className="form-error">{this.state.emailError}</p>
-                        <p className="form-error">{this.state.subjectError}</p>
                         <textarea 
                             name="message"
                             id="form4" 

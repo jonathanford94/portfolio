@@ -47,43 +47,51 @@ class App extends React.Component{
           position: "left",
         },
       ],
-      elements: {
-        about: '',
-      },
+      nav: "hidden",
+      menu: "show",
+      animation: "rightIn"
     }
     this.changeJob = this.changeJob.bind(this);
-    this.addAnimation = this.addAnimation.bind(this);
+    this.changeDisplay = this.changeDisplay.bind(this);
   }
   
   changeJob(newJob) {
     const updatedJob = JSON.parse(newJob);
     this.setState({job: updatedJob});
   }
-  
-  addAnimation(event) {
+
+  changeDisplay() {
+    if(this.state.nav === "hidden"){
+      this.setState({nav: "show"});
+      this.setState({menu: "hidden"});
+    } else if (this.state.nav === "show"){
+      this.setState({nav: "hidden"});
+      this.setState({menu: "show"});
+    }
   }
-  
 
   render() {
     return(
       <body className="container">
         <header>
           <a href={"http://localhost:3000/"}><img className="logo fadeDown delay1" src={require("../../Images/logo.ico")} /></a>
-          <div className="nav">
+          <div className={`nav ${this.state.nav} rightIn`}>
             <ul>
-              <li className="delay2 fadeDown"><AnchorLink href={"#aboutSection"}>About</AnchorLink></li>
-              <li className="delay3 fadeDown"><AnchorLink href={"#experienceSection"}>Experience</AnchorLink></li>
+              <li className="delay2 fadeDown"><AnchorLink href="#aboutSection">About</AnchorLink></li>
+              <li className="delay3 fadeDown"><AnchorLink href="#experienceSection">Experience</AnchorLink></li>
               <li className="delay4 fadeDown"><AnchorLink href="#portfolioSection">Portfolio</AnchorLink></li>
-              <li className="delay5 fadeDown"><AnchorLink href={"#contactSection"}>Contact</AnchorLink></li>
+              <li className="delay5 fadeDown"><AnchorLink href="#contactSection">Contact</AnchorLink></li>
             </ul>
             <a href={require("../../CV/Jonathan Ford CV.pdf")} target="_blank"><button className="delay6 button fadeDown">CV</button></a>
           </div>
+          <img className={`delay3 menu fadeDown ${this.state.menu}`} onClick={this.changeDisplay} src={require('../../Images/Menu.svg')}></img>
+          <img className={`delay3 cross fadeDown ${this.state.nav}`} onClick={this.changeDisplay} src={require('../../Images/Cross.svg')}></img>
         </header>
         <section className="home" id="homeSection">
           <h1 className="j fadeUp">JONATHAN</h1>
-          <h1 className="f fadeUp">FORD.</h1>
           <p className="fadeUp" >A web developer based in Manchester, UK, specialised in building websites and web applications.</p>
-          <AnchorLink href={"#contactSection"}><button className="button fadeUp">Contact</button></AnchorLink>
+          <h1 className="f fadeUp">FORD.</h1>
+          <AnchorLink id="homeButton" href={"#contactSection"}><button className="button fadeUp">Contact</button></AnchorLink>
         </section>
         
           <section className="about" id="aboutSection">
@@ -114,16 +122,16 @@ class App extends React.Component{
             </ScrollAnimation>
           </section>
         <section className="experience" id="experienceSection">
-          <ScrollAnimation className="delay1" animateIn="fadeUp" animateOnce="true">
+          <ScrollAnimation className="delay1 test" animateIn="fadeUp" animateOnce="true">
             <h3 className="title">Experience</h3>
             <div className="line"></div>
           </ScrollAnimation>
-          <ScrollAnimation className="delay2" animateIn="fadeUp" animateOnce="true">
+          <ScrollAnimation className="delay2 test" animateIn="fadeUp" animateOnce="true">
             <Experience job={this.state.job} changeJob={this.changeJob} buttons={this.state.buttons} />
           </ScrollAnimation>
         </section>
         <section className="portfolio" id="portfolioSection">
-          <ScrollAnimation className="delay1" animateIn="fadeUp" animateOnce="true">
+          <ScrollAnimation className="delay1 test" animateIn="fadeUp" animateOnce="true">
             <h3 className="title">Portfolio</h3>
             <div className="line"></div>
           </ScrollAnimation>

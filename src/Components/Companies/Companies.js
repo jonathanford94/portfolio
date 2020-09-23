@@ -1,5 +1,4 @@
 import React from 'react';
-import './Companies.css';
 import { styling } from './styling.js';
 
 const placement1 = {

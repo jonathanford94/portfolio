@@ -1,5 +1,4 @@
 import React from 'react';
-import './Jobs.css';
 
 export class Jobs extends React.Component {
     constructor(props){
