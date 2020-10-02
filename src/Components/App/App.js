@@ -49,10 +49,12 @@ class App extends React.Component{
       ],
       nav: "hidden",
       menu: "show",
-      animation: "rightIn"
+      animation: "rightIn",
+      emailAlert: "hidden1",
     }
     this.changeJob = this.changeJob.bind(this);
     this.changeDisplay = this.changeDisplay.bind(this);
+    this.emailAlertToggle = this.emailAlertToggle.bind(this);
   }
   
   changeJob(newJob) {
@@ -70,11 +72,21 @@ class App extends React.Component{
     }
   }
 
+  emailAlertToggle(){
+    if(this.state.emailAlert === "hidden1"){
+      this.setState({emailAlert: "show1"})
+    } else if(this.state.emailAlert === "show1"){
+      this.setState({emailAlert: "hidden1"});
+      const form = document.getElementById("contactForm");
+      form.reset();
+    }
+  }
+
   render() {
     return(
       <body className="container">
         <header>
-          <a href={"http://localhost:3000/"}><img className="logo fadeDown delay1" src={require("../../Images/logo.ico")} /></a>
+          <a href={"http://192.168.1.126:3000/"}><img className="logo fadeDown delay1" src={require("../../Images/logo.ico")} /></a>
           <div className={`nav ${this.state.nav} rightIn`}>
             <ul>
               <li className="delay2 fadeDown"><AnchorLink href="#aboutSection">About</AnchorLink></li>
@@ -138,7 +150,11 @@ class App extends React.Component{
           <Portfolio projects={this.state.portfolio}/>
         </section>
         <section className="contactSection" id="contactSection">
-          <Contact />
+          <Contact emailToggle={this.emailAlertToggle} />
+          <div className={`emailAlert ${this.state.emailAlert}`}>
+          <img onClick={this.emailAlertToggle} src={require('../../Images/Cross.svg')}></img>
+            <p>Thank you for your email, I will be in touch shortly. <br/><br/> Many Thanks, <br/><br/>Jonathan</p>
+          </div>
         </section>
         <footer>
           <div className="footerline"></div>

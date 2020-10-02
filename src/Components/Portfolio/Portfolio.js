@@ -3,10 +3,6 @@ import './Portfolio.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 export class Portfolio extends React.Component {
-    constructor(props){
-        super(props);
-    }
-
     render() {
         return (
             <div className="projectContainer">

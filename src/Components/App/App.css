@@ -54,6 +54,14 @@
   animation-fill-mode: backwards;
 }
 
+.hidden1{
+  display: none;
+}
+
+.show1{
+  display: inline-block;
+}
+
 .delay1{
   animation-delay: 0.2s;
 }
@@ -299,6 +307,41 @@ header{
   position: relative;
 }
 
+.emailAlert{
+  background-color: #13447c;
+  color: #E7E7E5;
+  font-size: 20px;
+  font-weight: bold;
+  position: fixed;
+  top: 50%;
+  -ms-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  left: 50%;
+  width: 400px;
+  height: 200px;
+  border-radius: 25px;
+}
+
+.emailAlert img{
+  width: 40px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  filter: invert(9%) sepia(12%) saturate(7461%) hue-rotate(192deg) brightness(100%) contrast(95%);
+}
+
+.emailAlert img:hover{
+  filter: invert(28%) sepia(71%) saturate(1056%) hue-rotate(350deg) brightness(98%) contrast(91%);
+}
+
+.emailAlert p{
+  position: absolute;
+  top: 8px;
+  left: 35px;
+  letter-spacing: 1px;
+  width: 250px;
+}
+
 footer{
   grid-column: 1 / 11;
   grid-row: 22 / 23;
@@ -481,6 +524,10 @@ footer img:hover{
     grid-column: 2 / 10;
   }
 
+  .emailAlert{
+    width: 350px;
+  }
+
   .socials{
     width: 15%;
   }
@@ -622,6 +669,20 @@ footer img:hover{
     grid-column: 2 / 10;
   }
 
+  .emailAlert{
+    width: 300px;
+    height: 160px;
+  }
+
+  .emailAlert p{
+    font-size: 16px;
+    width: 210px;
+  }
+
+  .emailAlert img{
+    width: 30px;
+  }
+
   footer p{
     font-size: 14px;
   }  
@@ -683,6 +744,23 @@ footer img:hover{
 
   .contactSection{
     grid-column: 2 / 10;
+  }
+
+  .emailAlert{
+    width: 240px;
+    height: 130px;
+  }
+
+  .emailAlert p{
+    font-size: 12px;
+    left: 15px;
+    top: 5px;
+    width: 190px;
+  }
+
+  .emailAlert img{
+    right: 10px;
+    top: 10px;
   }
 
   footer p{

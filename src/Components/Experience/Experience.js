@@ -4,10 +4,6 @@ import { Jobs } from '../Jobs/Jobs';
 import './Experience.css';
 
 export class Experience extends React.Component {
-    constructor(props){
-        super(props);
-    }
-
     render() {
         return (
             <div className="experienceContainer">
