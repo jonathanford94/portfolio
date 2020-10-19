@@ -93,6 +93,7 @@
   grid-auto-rows: minmax(200px, auto);
   font-family: 'Roboto', sans-serif, 'Arial';
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 header{
@@ -116,10 +117,11 @@ header{
 
 .logo:hover{
   filter: invert(47%) sepia(26%) saturate(2356%) hue-rotate(352deg) brightness(91%) contrast(91%);
+  cursor: pointer;
 }
 
 .nav{
-  display: inline-block;
+  display: block;
   position: relative;
   font-weight: bold;
   right: 1%;
@@ -146,6 +148,7 @@ header{
 
 .nav ul a:hover{
   color: #A34716;
+  cursor: pointer;
 }
 
 .button{
@@ -169,6 +172,7 @@ header{
 
 .button:hover{
   background-color: #D66716;
+  cursor: pointer;
 }
 
 .home{
@@ -332,6 +336,7 @@ header{
 
 .emailAlert img:hover{
   filter: invert(28%) sepia(71%) saturate(1056%) hue-rotate(350deg) brightness(98%) contrast(91%);
+  cursor: pointer;
 }
 
 .emailAlert p{
@@ -381,6 +386,7 @@ footer img{
 
 footer img:hover{
   filter: invert(47%) sepia(26%) saturate(2356%) hue-rotate(352deg) brightness(91%) contrast(91%);
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -594,6 +600,7 @@ footer img:hover{
 
   .menu:hover{
     filter: invert(47%) sepia(26%) saturate(2356%) hue-rotate(352deg) brightness(91%) contrast(91%);
+    cursor: pointer;
   }
 
   .cross{
@@ -606,6 +613,7 @@ footer img:hover{
 
   .cross:hover{
     filter: invert(47%) sepia(26%) saturate(2356%) hue-rotate(352deg) brightness(91%) contrast(91%);
+    cursor: pointer;
   }
 
   .home h1{
@@ -640,7 +648,10 @@ footer img:hover{
     width: 150px;
     height: 150px;
     top: 95px;
-    left: 33%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
     margin: 0px;
   }
 
@@ -723,10 +734,6 @@ footer img:hover{
   .about p {
     line-height: 14px;
     font-size: 10px;
-  }
-  
-  .about img {
-    left: 32%;
   }
 
   .about ul{

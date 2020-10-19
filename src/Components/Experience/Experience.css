@@ -34,6 +34,7 @@
 .companies button:hover{
     color: #A34716;
     background-color: #0D2340;
+    cursor: pointer;
 }
 
 .job{

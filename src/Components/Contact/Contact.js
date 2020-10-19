@@ -3,24 +3,6 @@ import './Contact.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 import axios from 'axios';
 
-const customStyles = {
-    content: {
-        top: 'calc(50% + 27.5px)',
-        left: '50%',
-        right: 'auto',
-        bottom: 'auto',
-        width: '35%',
-        minWidth: '250px',
-        height: '25%',
-        minHeight: '250px',
-        marginRight: '-50%',
-        transform: 'translate(-50%, -50%)',
-        padding: "0",
-        borderRadius: "3px",
-        border: "none"
-    }
-};
-
 export class Contact extends React.Component {
     constructor(props){
         super(props);

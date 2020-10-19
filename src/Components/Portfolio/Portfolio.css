@@ -1,5 +1,5 @@
 .projectContainer{
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .project{
@@ -15,12 +15,13 @@
     height: 300px;
     position: absolute;
     top: 0;
-    left: 0;
-    filter: blur(2px) sepia(20%);
+    left: 90px;
+    filter: grayscale(80%)
 }
 
 .projectImg:hover{
     filter: none;
+    cursor: pointer;
 }
 
 .project h1{
@@ -89,7 +90,7 @@
 }
 
 #right .projectImg{
-    right: 0px;
+    right: 140px;
     left: auto;
 }
 
@@ -179,6 +180,7 @@
     
     .projectImg{
         height: 200px;
+        left: 80px;
     }
     
     .project h1{
@@ -210,7 +212,10 @@
         left: 470px;
         top: 104px;
     }
-      
+    
+    #right .projectImg{
+        right: 95px;
+    }
     
     #right h1{
         left: 35px;
@@ -231,122 +236,135 @@
     }
     
     .projectImg{
-        width: 85%;
-        left: 7.5%;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
         top: 30px;
     }
     
     .project h1{
         font-size: 18px;
         top: 0px;
-        left: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
     }
     
     .project ul{
-        font-size: 12px;
+        font-size: 10px;
         line-height: 16px;
-        left: 23%;
+        left: 50%;
+        transform: translateX(-46%);
+        -webkit-transform: translateX(-46%);
+        -moz-transform: translateX(-46%);
         top: 292px;
         columns: 3;
     }
     
     .project ul li::before {
         font-size: 16px;
+        padding-left: 5px;
+    }
+    
+    .project ul li {
+        white-space: nowrap;
+        padding-right: 5px;
     }
     
     .project p{
+        width: 275px;
         font-size: 12px;
         line-height: 16px;
-        width: 65%;
-        left: 14%;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
         top: 180px;
         height: 80px;
         letter-spacing: 0.5px;
     }
     
     .gitImg{
-        left: 17%;
+        left: 50%;
+        transform: translateX(-400%);
+        -webkit-transform: translateX(-400%);
+        -moz-transform: translateX(-400%);
         top: 290px;
     }
       
     #right .projectImg{
-        right: 7.5%;
+        right: 50%;
+        transform: translateX(50%);
+        -webkit-transform: translateX(50%);
+        -moz-transform: translateX(50%);
     }
 
     #right h1{
-        left: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
     }
     
     #right p{
-        left: 14%;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        padding-bottom: 20px;
     }
 
     #right ul{
-        left: 23%;
+        top: 305px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
     }
     
     #right .gitImg{
-        left: 17%;
+        top: 303px;
+        left: 50%;
+        transform: translateX(-400%);
+        -webkit-transform: translateX(-400%);
+        -moz-transform: translateX(-400%);
     }
 }
   
 @media only screen and (max-width: 480px) {
-    .projectImg{
-        width: 100%;
-        left: 0%;
-        height: auto;
-    }
-    
-    .project h1{
-        font-size: 16px;
-        left: 10%;
+    .project img{
+        height: 40vw;
     }
     
     .project ul{
-        font-size: 9px;
-        line-height: 14px;
-        left: 19%;
-        top: 228px;
-        columns: 3;
-    }
-    
-    .project ul li::before {
-        font-size: 16px;
+        top: 62.5vw;
+        font-size: 2.3vw;
     }
     
     .project p{
-        font-size: 10px;
-        line-height: 14px;
-        margin: 0;
-        width: 65%;
-        left: 12%;
-        top: 120px;
-        height: 85px;
-        letter-spacing: 0px;
+        width: 55vw;
+        height: auto;
+        font-size: 2.2vw;
+        line-height: 4vw;
+        top: 35vw;
     }
     
     .gitImg{
-        left: 14%;
-        top: 225px;
-    }
-      
-    #right .projectImg{
-        right: 0%;
-    }
-
-    #right h1{
-        left: 10%;
-    }
-    
-    #right p{
-        left: 12%;
+        width: 6.7vw;
+        top: 45vw;
     }
 
     #right ul{
-        left: 19%;
+        top: 62vw;
     }
-    
+
+    #right p {
+        padding-bottom: 7px;
+    }
+
     #right .gitImg{
-        left: 14%;
+        top: 45vw;
     }
-} 
+}
