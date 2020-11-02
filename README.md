@@ -10,4 +10,4 @@ This repository is for my personal web developer portfolio. My portfolio has bee
 - Node.js
 - Express
 
-🌐 <a href="">Checkout my portfolio</a>
+🌐 <a href="https://jonathan-ford.co.uk/">Checkout my portfolio</a>
