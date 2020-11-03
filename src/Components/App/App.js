@@ -15,11 +15,10 @@ class App extends React.Component{
         title: "Technical Service Specialist",
         date: "Aug18 - Apr20",
         description: [
-          "Agile project management of web application for IT infrastructure estate management tool.",
-          "Business case development for capitalisable benefit against investment.",
-          "Budget forecasting and management to support business wide financial targets.",
-          "Understanding end user requirements via analysis of tools, processes, people and data required for key business needs.",
-          "Roadmap planning for the delivery of interdependencies within the initiative."
+          "Agile project management and devlivery of web application for IT infrastructure estate management tool.",
+          "Business case development for capitalisable benefit against investment, including roadmap planning, financial management and forecasting, vendor management and work package negotiating.",
+          "Understanding end user requirements by analysing the tools, processes, people and data needed for key business processes and transforming into user stories.",
+          "Backlog management for the leadership of onshore and offshore development teams.",
         ],
         styling: "one",
       },
@@ -29,22 +28,25 @@ class App extends React.Component{
           title: "PLYLSTR",
           skills: ["React", "Node.js", "Spotify API"],
           description: "PLYLSTR is a web app that allows a user to login to their Spotify profile using the Spotify API in order to return spotify content, allowing the user to search for songs and build playlists that will then be saved to their profile.",
-          gitlink: "https://github.com/jonathanford94/Jamming",
+          gitlink: "https://github.com/jonathanford94/PLYLSTR",
           position: "left",
+          website: "https://plylstr.jonathan-ford.co.uk/",
         }, {
           img: "Appetite.png",
           title: "Appetite",
           skills: ["React", "Node.js", "Yelp API"],
           description: "Appetite is a React web app, that was built to use the Yelp API in order to display Yelp's restaurant content based on a users search. A user can input a type of cusine keyword and a location keyword and all restaurants will be shown with details.",
-          gitlink: "https://github.com/jonathanford94/Ravenous",
+          gitlink: "https://github.com/jonathanford94/Appetite",
           position: "right",
+          website: "https://appetite.jonathan-ford.co.uk/",
         },{
           img: "TorchFiles.png",
           title: "Torch Files",
           skills: ["React", "Express", "Node-SQLite"],
           description: "Torch Files is a React web app that shows the statistics of gold medals won by countries at the Olympics (Summer and Winter) over the years, which can be queried and sorted by users in different ways to interpret the data.",
-          gitlink: "https://github.com/jonathanford94/Gold-Medal-Metrics",
+          gitlink: "https://github.com/jonathanford94/TorchFiles",
           position: "left",
+          website: "https://torch-files.jonathan-ford.co.uk/",
         },
       ],
       nav: "hidden",
@@ -86,7 +88,7 @@ class App extends React.Component{
     return(
       <body className="container">
         <header>
-          <a href={"http://192.168.1.126:3000/"}><img className="logo fadeDown delay1" src={require("../../Images/logo.ico")} alt="" /></a>
+          <a href={"https://jonathan-ford.co.uk/"}><img className="logo fadeDown delay1" src={require("../../Images/logo.ico")} alt="" /></a>
           <div className={`nav ${this.state.nav} rightIn`}>
             <ul>
               <li className="delay2 fadeDown"><AnchorLink href="#aboutSection">About</AnchorLink></li>

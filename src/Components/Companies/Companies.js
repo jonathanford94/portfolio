@@ -5,11 +5,10 @@ const placement1 = {
     title: "Technical Service Specialist",
     date: "Aug18 - Apr20",
     description: [
-        "Agile project management of web application for IT infrastructure estate management tool.",
-        "Business case development for capitalisable benefit against investment.",
-        "Budget forecasting and management to support business wide financial targets.",
-        "Understanding end user requirements via analysis of tools, processes, people and data required for key business needs.",
-        "Roadmap planning for the delivery of interdependencies within the initiative.",
+        "Agile project management and devlivery of web application for IT infrastructure estate management tool.",
+        "Business case development for capitalisable benefit against investment, including roadmap planning, financial management and forecasting, vendor management and work package negotiating.",
+        "Understanding end user requirements by analysing the tools, processes, people and data needed for key business processes and transforming into user stories.",
+        "Backlog management for the leadership of onshore and offshore development teams.",
     ],
     styling: styling.one,
 };
@@ -19,10 +18,8 @@ const placement2 = {
     description: [
         "IT project portfolio ownership for the Customer Operations business unit, consisting of waterfall and agile IT projects.",
         "Maintaining and constructing the delivery plans and coordinating with stakeholders, to align with key business go to market dates, technical releases and continuous prioritisation within the portfolio.",
-        "Governance of the business demand and resource allocation from the delivering teams for the successful implementation of business initiatives.",
-        "Budget management of the project portfolio (£8M) including forecasting, creating business cases and demand prioritisation.",
-        "Relationship management with key senior stakeholders both in the Customer Operations business unit and IT department for the reporting of projects within the Customer Operations portfolio."
-        
+        "Budget management of the project portfolio (£8M) including forecasting, business case creation and work package development for design, build, test and deployment activities. ",
+        "Relationship management with key stakeholders for the progress reporting of project portfolio.",
     ],
     styling: styling.two,
 };
@@ -39,10 +36,9 @@ const placement4 = {
     title: "L2 Application Support (Graduate Scheme)",
     date: "Sept16 - Mar17",
     description: [
-        "Billing relationship management system monitoring on the progress of daily payment jobs.",
-        "Resolving issues reported within a Mobile Virtual Network Enabler IT stack.",
+        "System monitoring and resolving issues reported to the different applications and Mobile Virtual Network Enabler IT stack and managing demand for application development, implementing changes and liaising with stakeholders to understand requirements",
         "Process development and documentation of common issues and resolution within the IT stack.",
-        "Managing demand for application development, implementing changes and liaising with stakeholders to understand requirements. ",
+        "Managing demand for application development, implementing changes and liaising with stakeholders to understand requirements.",
     ],
     styling: styling.four,
 };

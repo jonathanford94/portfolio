@@ -11,7 +11,7 @@ export class Portfolio extends React.Component {
                         return (
                         <ScrollAnimation className="delay3" animateIn="fadeUp" animateOnce="true">
                             <div className="project" id={project.position}>
-                                <img className="projectImg" src={require(`../../Images/Portfolio/${project.img}`)} alt=""/> 
+                                <a href={project.website} target='_blank' rel="noopener noreferrer"><img className="projectImg" src={require(`../../Images/Portfolio/${project.img}`)} alt=""/></a>
                                 <h1>{project.title}</h1>
                                 <ul>
                                     {
